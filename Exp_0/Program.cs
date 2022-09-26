@@ -13,24 +13,18 @@ int a1 = 11;
 int b1 = 11;
 int c1 = 39;
 
-int a2 = 12;
+int a2 = 2212;
 int b2 = 12;
-int c2 = 12;
+int c2 = 123;
 
-int a3 = 13;
+int a3 = 111113;
 int b3 = 13;
 int c3 = 313;
 
-int max = a1;
-if (b1 > max) max = b1;
-if (c1 > max) max = c1;
+int max1 = Max(a1, b1, c1);
+int max2 = Max(a2, b2, c2);
+int max3 = Max(a3, b3, c3);
 
-if (a2 > max) max = a2;
-if (b2 > max) max = b2;
-if (c2 > max) max = c2;
-
-if (a3 > max) max = a3;
-if (b3 > max) max = b3;
-if (c3 > max) max = c3;
-
+// Можно эти 3 функции вложить сразу в основную
+int max = Max(max1, max2, max3);
 Console.WriteLine(max);
